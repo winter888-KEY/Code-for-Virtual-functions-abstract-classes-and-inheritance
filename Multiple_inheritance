@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Father {
+public:
+    void skill1() {
+        cout << "Coding\n";
+    }
+};
+
+class Mother {
+public:
+    void skill2() {
+        cout << "Cooking\n";
+    }
+};
+
+class Child : public Father, public Mother {
+};
+
+int main() {
+    Child c;
+    c.skill1();
+    c.skill2();
+}
